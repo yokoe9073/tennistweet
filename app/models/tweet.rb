@@ -1,4 +1,4 @@
-class Tweet < ApplicationRecord
-  validates :text, presence: true
-  belongs_to :user
+class Comment < ApplicationRecord
+  belongs_to :tweet  
+  belongs_to :user  
 end
